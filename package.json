@@ -8,8 +8,7 @@
     "react-scripts": "1.1.0"
   },
   "lint-staged": {
-  "src/**/*.{js,jsx,json,css}": 
-    [
+    "src/**/*.{js,jsx,json,css}": [
       "eslint",
       "prettier --write",
       "git add"
@@ -20,11 +19,18 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "devDependencies": {
     "husky": "^0.14.3",
     "lint-staged": "^6.0.1",
-    "prettier": "^1.10.2"
+    "prettier": "^1.10.2",
+    "@storybook/react": "^3.3.10",
+    "@storybook/addon-actions": "^3.3.10",
+    "@storybook/addon-links": "^3.3.10",
+    "@storybook/addons": "^3.3.10",
+    "babel-core": "^6.26.0"
   }
 }
