@@ -59,17 +59,15 @@ Add additional notes about how to deploy this on a live system
 ## Built With
 
 * [React](https://facebook.github.io/react/docs/hello-world.html) - JavaScript library
-* [Gatsby](https://www.gatsbyjs.org) - Static site generator for React
 * [Styled Components](https://www.styled-components.com/) - React library to apply styles using CSS and JS to components
-* [Express](https://expressjs.com) - Express framework for Node.js 
 
 ## Authors
 
-* **Ben Derham** - *Lead Developer* - [GitHub](https://github.com/benderham)
+* **Ben Derham** - [GitHub](https://github.com/benderham)
 
 ## License
 
-Copyright 2018 - Marketforce Pty Ltd
+
 
 ## Acknowledgments
 
