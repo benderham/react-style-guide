@@ -5,13 +5,22 @@
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-scripts": "1.1.0"
+    "react-scripts": "1.1.0",
+    "styled-components": "^3.0.2"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json,css}": [
       "eslint",
       "prettier --write",
       "git add"
+    ]
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!src/**/*.stories.js",
+      "!<rootDir>/node_modules/",
+      "!<rootDir>/path/to/dir/"
     ]
   },
   "scripts": {
@@ -32,6 +41,7 @@
     "babel-core": "^6.26.0",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.1",
     "husky": "^0.14.3",
     "lint-staged": "^6.0.1",
     "prettier": "^1.10.2",

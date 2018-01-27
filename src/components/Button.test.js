@@ -1,9 +1,34 @@
-/* eslint-env jest */
 import React from 'react';
-import Button from './Button';
 import { shallow } from 'enzyme';
+import { shallowToJson } from 'enzyme-to-json';
+import Button from './Button';
 
-it('renders given label', () => {
-  const wrapper = shallow(<Button label="My Label" />);
-  expect(wrapper.find('button').text()).toEqual('My Label');
+beforeAll(() => {
+  jest.spyOn(global.console, 'error').mockImplementation(warning => {
+    throw new Error(warning);
+  });
+});
+
+afterAll(() => {
+  jest.restoreAllMocks();
+});
+
+it('renders correctly without error', () => {
+  const props = {
+    label: 'Button',
+    onClick: jest.fn(),
+  };
+  const output = shallow(<Button {...props} />);
+  expect(shallowToJson(output)).toMatchSnapshot();
+});
+
+it('should handle the click event', () => {
+  const mockFn = jest.fn();
+  const props = {
+    label: 'Button',
+    onClick: mockFn,
+  };
+  const output = shallow(<Button {...props} />);
+  output.simulate('click');
+  expect(mockFn).toHaveBeenCalled();
 });
