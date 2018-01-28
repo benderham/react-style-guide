@@ -1,9 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly without error 1`] = `
+exports[`should render correctly without error 1`] = `
 <styled.button
   disabled={false}
   onClick={[Function]}
+  type="button"
 >
   Button
 </styled.button>

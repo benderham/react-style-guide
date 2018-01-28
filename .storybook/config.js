@@ -2,6 +2,9 @@ import React from 'react';
 import { configure, addDecorator } from '@storybook/react';
 import { setDefaults } from '@storybook/addon-info';
 import { checkA11y } from '@storybook/addon-a11y';
+import { ThemeProvider } from 'styled-components';
+import { theme } from '../src/utils/theme';
+import Global from '../src/utils/global';
 
 // addon-info
 setDefaults({
@@ -10,16 +13,20 @@ setDefaults({
 });
 
 addDecorator(story => (
-  <div
-    style={{
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      padding: '3em',
-    }}
-  >
-    {story()}
-  </div>
+  <ThemeProvider theme={theme}>
+    <Global>
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          padding: '3em',
+        }}
+      >
+        {story()}
+      </div>
+    </Global>
+  </ThemeProvider>
 ));
 //addDecorator(checkA11y);
 
