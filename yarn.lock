@@ -2,6 +2,14 @@
 # yarn lockfile v1
 
 
+"@storybook/addon-a11y@^3.3.11":
+  version "3.3.11"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-a11y/-/addon-a11y-3.3.11.tgz#04c1f4548ebb8e2d22577595e1743782fd023a93"
+  dependencies:
+    "@storybook/components" "^3.3.11"
+    axe-core "^2.6.0"
+    prop-types "^15.6.0"
+
 "@storybook/addon-actions@^3.3.10":
   version "3.3.10"
   resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-3.3.10.tgz#f3e4b538d8260364c55a3ba1e301a2fab9d8d3f2"
@@ -58,6 +66,14 @@
 "@storybook/components@^3.3.10":
   version "3.3.10"
   resolved "https://registry.yarnpkg.com/@storybook/components/-/components-3.3.10.tgz#f213a129ed49de33cdaf116da2c2b662b8eb3ea0"
+  dependencies:
+    glamor "^2.20.40"
+    glamorous "^4.11.2"
+    prop-types "^15.6.0"
+
+"@storybook/components@^3.3.11":
+  version "3.3.11"
+  resolved "https://registry.yarnpkg.com/@storybook/components/-/components-3.3.11.tgz#cb2a48b52e7cb45408172f4462f4730ca6970e78"
   dependencies:
     glamor "^2.20.40"
     glamorous "^4.11.2"
@@ -574,6 +590,10 @@ aws-sign2@~0.7.0:
 aws4@^1.2.1, aws4@^1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.6.0.tgz#83ef5ca860b2b32e4a0deedee8c771b9db57471e"
+
+axe-core@^2.6.0:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-2.6.1.tgz#28772c4f76966d373acda35b9a409299dc00d1b5"
 
 axobject-query@^0.1.0:
   version "0.1.0"

@@ -33,6 +33,7 @@
     "build-storybook": "build-storybook -s public"
   },
   "devDependencies": {
+    "@storybook/addon-a11y": "^3.3.11",
     "@storybook/addon-actions": "^3.3.10",
     "@storybook/addon-info": "^3.3.10",
     "@storybook/addon-links": "^3.3.10",

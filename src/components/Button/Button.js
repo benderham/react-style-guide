@@ -6,11 +6,18 @@ const StyledButton = styled.button`
   border: solid 1px red;
 `;
 
-const Button = ({ label, onClick }) => (
-  <StyledButton onClick={onClick}>{label}</StyledButton>
+const Button = ({ disabled, label, onClick }) => (
+  <StyledButton onClick={onClick} disabled={disabled}>
+    {label}
+  </StyledButton>
 );
 
+Button.defaultProps = {
+  disabled: false,
+};
+
 Button.propTypes = {
+  disabled: PropTypes.bool,
   /** Text shown on the button. */
   label: PropTypes.string.isRequired,
   /** Function passed to the button's 'onClick' event. */
