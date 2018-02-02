@@ -4,7 +4,7 @@ import { setDefaults } from '@storybook/addon-info';
 import { checkA11y } from '@storybook/addon-a11y';
 import { ThemeProvider } from 'styled-components';
 import { theme } from '../src/utils/theme';
-import Global from '../src/utils/global';
+import typography from './../src/utils/typography';
 
 // addon-info
 setDefaults({
@@ -14,21 +14,20 @@ setDefaults({
 
 addDecorator(story => (
   <ThemeProvider theme={theme}>
-    <Global>
-      <div
-        style={{
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          padding: '3em',
-        }}
-      >
-        {story()}
-      </div>
-    </Global>
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        padding: '3em',
+      }}
+    >
+      {story()}
+    </div>
   </ThemeProvider>
 ));
 //addDecorator(checkA11y);
+typography.injectStyles();
 
 const req = require.context('../src/components', true, /\.stories\.js$/);
 
