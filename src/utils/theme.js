@@ -1,12 +1,11 @@
 exports.theme = {
   colors: {
-    bonJour: '#d9d8d9',
-    celery: '#99c24d',
-    jungleGreen: '#2ba8a8',
-    mineShaft: '#2f2d2e',
-    pickledBluewood: '#2E4057',
-    tangerine: '#f18f01',
     white: '#ffffff',
+    light: '#F2EAF2',
+    bright: '#B500B5',
+    medium: '#632B63',
+    dark: '#3A183A',
+    black: '#070707',
   },
   transitions: {},
 };

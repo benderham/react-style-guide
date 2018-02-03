@@ -26,7 +26,7 @@ addDecorator(story => (
     </div>
   </ThemeProvider>
 ));
-//addDecorator(checkA11y);
+addDecorator(checkA11y);
 typography.injectStyles();
 
 const req = require.context('../src/components', true, /\.stories\.js$/);

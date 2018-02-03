@@ -7,15 +7,27 @@ import Button from './Button';
 
 storiesOf('Button', module)
   .add(
-    'Primary Button',
+    'Primary',
     withInfo(`
-      Default button style with text label.
+      Primary button style with text label.
     `)(() => <Button label="Button" onClick={action('button-click')} />),
   )
   .add(
-    'Primary Button - Disabled',
+    'Secondary',
     withInfo(`
-      Default button style, disabled.
+      Secondary button style with text label.
+    `)(() => (
+      <Button
+        label="Button"
+        onClick={action('button-click')}
+        kind="secondary"
+      />
+    )),
+  )
+  .add(
+    'Disabled',
+    withInfo(`
+      Disabled button.
     `)(() => (
       <Button label="Button" onClick={action('button-click')} disabled />
     )),
