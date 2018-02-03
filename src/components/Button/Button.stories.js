@@ -5,15 +5,15 @@ import { withInfo } from '@storybook/addon-info';
 
 import Button from './Button';
 
-storiesOf('Button', module)
+storiesOf('Buttons', module)
   .add(
-    'Primary',
+    'Button Primary',
     withInfo(`
       Primary button style with text label.
     `)(() => <Button label="Button" onClick={action('button-click')} />),
   )
   .add(
-    'Secondary',
+    'Button Secondary',
     withInfo(`
       Secondary button style with text label.
     `)(() => (
@@ -25,7 +25,7 @@ storiesOf('Button', module)
     )),
   )
   .add(
-    'Disabled',
+    'Button Disabled',
     withInfo(`
       Disabled button.
     `)(() => (
