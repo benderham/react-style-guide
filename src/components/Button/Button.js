@@ -75,9 +75,9 @@ const StyledButton = styled.button`
   }
 `;
 
-const Button = ({ kind, disabled, label, onClick, type }) => (
+const Button = ({ children, kind, disabled, onClick, type }) => (
   <StyledButton kind={kind} type={type} onClick={onClick} disabled={disabled}>
-    {label}
+    {children}
   </StyledButton>
 );
 
@@ -90,8 +90,6 @@ Button.defaultProps = {
 Button.propTypes = {
   kind: PropTypes.oneOf(['primary', 'secondary']),
   disabled: PropTypes.bool,
-  /** Text shown on the button. */
-  label: PropTypes.string.isRequired,
   /** Function passed to the button's 'onClick' event. */
   onClick: PropTypes.func.isRequired,
   type: PropTypes.oneOf(['button', 'reset', 'submit']),
