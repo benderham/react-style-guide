@@ -103,6 +103,7 @@ const Button = ({ children, disabled, kind, href, onClick, type }) => {
 Button.defaultProps = {
   kind: 'primary',
   disabled: false,
+  href: null,
   type: 'button',
 };
 
