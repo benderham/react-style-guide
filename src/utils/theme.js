@@ -1,11 +1,12 @@
 exports.theme = {
   colors: {
-    white: '#ffffff',
-    light: '#F2EAF2',
-    bright: '#B500B5',
-    medium: '#632B63',
-    dark: '#3A183A',
-    black: '#070707',
+    primary: '#A10578',
+    accent: '#FA0574',
+    light: '#DDCEDD',
+    medium: '#9C94A7 ',
+    dark: '#D31E7B',
+    white: '#F7F7F7',
+    black: '#422654',
   },
   transitions: {},
 };

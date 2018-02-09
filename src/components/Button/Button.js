@@ -1,24 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
-const StyledButton = styled.button`
+const styles = css`
+  display: inline-block;
   position: relative;
   padding: 0.6rem 1.8rem;
   font-size: 1.2rem;
   font-weight: 700;
   text-transform: lowercase;
+  text-decoration: none;
   line-height: 1;
   color: ${props =>
     props.kind === 'secondary'
-      ? props.theme.colors.medium
-      : props.theme.colors.bright};
+      ? props.theme.colors.accent
+      : props.theme.colors.primary};
   background-color: transparent;
-  border: solid 2px
-    ${props =>
-      props.kind === 'secondary'
-        ? props.theme.colors.medium
-        : props.theme.colors.bright};
+  /* prettier-ignore */
+  border: solid 2px ${props =>
+    props.kind === 'secondary'
+      ? props.theme.colors.accent
+      : props.theme.colors.primary};
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   transform: perspective(1px) translateZ(0);
   transition: color 0.3s ease-out;
@@ -32,13 +34,12 @@ const StyledButton = styled.button`
     left: 0;
     background-color: ${props =>
       props.kind === 'secondary'
-        ? props.theme.colors.medium
-        : props.theme.colors.bright};
-    border: solid 2px
-      ${props =>
-        props.kind === 'secondary'
-          ? props.theme.colors.medium
-          : props.theme.colors.bright};
+        ? props.theme.colors.accent
+        : props.theme.colors.primary};
+    border: solid 2px ${props =>
+      props.kind === 'secondary'
+        ? props.theme.colors.accent
+        : props.theme.colors.primary};
     transform: scaleX(0);
     transform-origin: 0 50%;
     transition: transform 0.3s ease-out;
@@ -65,8 +66,8 @@ const StyledButton = styled.button`
     &:active {
       color: ${props =>
         props.kind === 'secondary'
-          ? props.theme.colors.medium
-          : props.theme.colors.bright};
+          ? props.theme.colors.accent
+          : props.theme.colors.primary};
 
       &::before {
         transform: scaleX(0);
@@ -75,23 +76,41 @@ const StyledButton = styled.button`
   }
 `;
 
-const Button = ({ kind, disabled, label, onClick, type }) => (
-  <StyledButton kind={kind} type={type} onClick={onClick} disabled={disabled}>
-    {label}
-  </StyledButton>
-);
+const StyledButton = styled.button`
+  ${styles};
+`;
+
+const StyledAnchor = styled.a`
+  ${styles};
+`;
+
+const Button = ({ children, disabled, kind, href, onClick, type }) => {
+  const button = (
+    <StyledButton kind={kind} onClick={onClick} disabled={disabled} type={type}>
+      {children}
+    </StyledButton>
+  );
+
+  const anchor = (
+    <StyledAnchor kind={kind} href={href} role="button">
+      {children}
+    </StyledAnchor>
+  );
+
+  return href ? anchor : button;
+};
 
 Button.defaultProps = {
   kind: 'primary',
   disabled: false,
+  href: null,
   type: 'button',
 };
 
 Button.propTypes = {
   kind: PropTypes.oneOf(['primary', 'secondary']),
   disabled: PropTypes.bool,
-  /** Text shown on the button. */
-  label: PropTypes.string.isRequired,
+  href: PropTypes.string,
   /** Function passed to the button's 'onClick' event. */
   onClick: PropTypes.func.isRequired,
   type: PropTypes.oneOf(['button', 'reset', 'submit']),

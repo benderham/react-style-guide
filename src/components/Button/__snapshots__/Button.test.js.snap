@@ -1,34 +1,348 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Button Snapshots Disabled Button should render as expected, without error 1`] = `
-<styled.button
+.c0 {
+  display: inline-block;
+  position: relative;
+  padding: 0.6rem 1.8rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: lowercase;
+  text-decoration: none;
+  line-height: 1;
+  color: #A10578;
+  background-color: transparent;
+  border: solid 2px #A10578;
+  box-shadow: 0 0 1px rgba(0,0,0,0);
+  -webkit-transform: perspective(1px) translateZ(0);
+  -ms-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
+  cursor: pointer;
+}
+
+.c0::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #A10578;
+  border: solid 2px #A10578;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  -ms-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -webkit-transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  content: '';
+  z-index: -1;
+}
+
+.c0:hover,
+.c0:focus,
+.c0:active {
+  color: #F7F7F7;
+}
+
+.c0:hover::before,
+.c0:focus::before,
+.c0:active::before {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.c0:disabled {
+  cursor: default;
+  opacity: 0.3;
+}
+
+.c0:disabled:hover,
+.c0:disabled:focus,
+.c0:disabled:active {
+  color: #A10578;
+}
+
+.c0:disabled:hover::before,
+.c0:disabled:focus::before,
+.c0:disabled:active::before {
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+}
+
+<button
+  className="c0"
   disabled={true}
   kind="primary"
   onClick={[Function]}
   type="button"
 >
   Button
-</styled.button>
+</button>
 `;
 
-exports[`Button Snapshots Primary Button should render as expected, without error 1`] = `
-<styled.button
+exports[`Button Snapshots Primary Button should render anchor as expected, without error 1`] = `
+.c0 {
+  display: inline-block;
+  position: relative;
+  padding: 0.6rem 1.8rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: lowercase;
+  text-decoration: none;
+  line-height: 1;
+  color: #A10578;
+  background-color: transparent;
+  border: solid 2px #A10578;
+  box-shadow: 0 0 1px rgba(0,0,0,0);
+  -webkit-transform: perspective(1px) translateZ(0);
+  -ms-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
+  cursor: pointer;
+}
+
+.c0::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #A10578;
+  border: solid 2px #A10578;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  -ms-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -webkit-transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  content: '';
+  z-index: -1;
+}
+
+.c0:hover,
+.c0:focus,
+.c0:active {
+  color: #F7F7F7;
+}
+
+.c0:hover::before,
+.c0:focus::before,
+.c0:active::before {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.c0:disabled {
+  cursor: default;
+  opacity: 0.3;
+}
+
+.c0:disabled:hover,
+.c0:disabled:focus,
+.c0:disabled:active {
+  color: #A10578;
+}
+
+.c0:disabled:hover::before,
+.c0:disabled:focus::before,
+.c0:disabled:active::before {
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+}
+
+<a
+  className="c0"
+  href="https://google.com.au"
+  kind="primary"
+  role="button"
+>
+  Button
+</a>
+`;
+
+exports[`Button Snapshots Primary Button should render button as expected, without error 1`] = `
+.c0 {
+  display: inline-block;
+  position: relative;
+  padding: 0.6rem 1.8rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: lowercase;
+  text-decoration: none;
+  line-height: 1;
+  color: #A10578;
+  background-color: transparent;
+  border: solid 2px #A10578;
+  box-shadow: 0 0 1px rgba(0,0,0,0);
+  -webkit-transform: perspective(1px) translateZ(0);
+  -ms-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
+  cursor: pointer;
+}
+
+.c0::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #A10578;
+  border: solid 2px #A10578;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  -ms-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -webkit-transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  content: '';
+  z-index: -1;
+}
+
+.c0:hover,
+.c0:focus,
+.c0:active {
+  color: #F7F7F7;
+}
+
+.c0:hover::before,
+.c0:focus::before,
+.c0:active::before {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.c0:disabled {
+  cursor: default;
+  opacity: 0.3;
+}
+
+.c0:disabled:hover,
+.c0:disabled:focus,
+.c0:disabled:active {
+  color: #A10578;
+}
+
+.c0:disabled:hover::before,
+.c0:disabled:focus::before,
+.c0:disabled:active::before {
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+}
+
+<button
+  className="c0"
   disabled={false}
   kind="primary"
   onClick={[Function]}
   type="button"
 >
   Button
-</styled.button>
+</button>
 `;
 
 exports[`Button Snapshots Secondary Button should render as expected, without error 1`] = `
-<styled.button
+.c0 {
+  display: inline-block;
+  position: relative;
+  padding: 0.6rem 1.8rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: lowercase;
+  text-decoration: none;
+  line-height: 1;
+  color: #FA0574;
+  background-color: transparent;
+  border: solid 2px #FA0574;
+  box-shadow: 0 0 1px rgba(0,0,0,0);
+  -webkit-transform: perspective(1px) translateZ(0);
+  -ms-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
+  cursor: pointer;
+}
+
+.c0::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #FA0574;
+  border: solid 2px #FA0574;
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  -ms-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -webkit-transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  content: '';
+  z-index: -1;
+}
+
+.c0:hover,
+.c0:focus,
+.c0:active {
+  color: #F7F7F7;
+}
+
+.c0:hover::before,
+.c0:focus::before,
+.c0:active::before {
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.c0:disabled {
+  cursor: default;
+  opacity: 0.3;
+}
+
+.c0:disabled:hover,
+.c0:disabled:focus,
+.c0:disabled:active {
+  color: #FA0574;
+}
+
+.c0:disabled:hover::before,
+.c0:disabled:focus::before,
+.c0:disabled:active::before {
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+}
+
+<button
+  className="c0"
   disabled={false}
-  kind="primary"
+  kind="secondary"
   onClick={[Function]}
   type="button"
 >
   Button
-</styled.button>
+</button>
 `;

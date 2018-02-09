@@ -14,7 +14,13 @@ const typography = new Typography({
       styles: ['400', '700', '900'],
     },
   ],
-  // See below for the full list of options.
+  overrideStyles: ({ adjustFontSizeTo, scale, rhythm }, options) => ({
+    a: {
+      // lineHeight: 1,
+      // padding: 0,
+      // margin: 0,
+    },
+  }),
 });
 
 export default typography;
