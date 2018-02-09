@@ -1,3 +1,4 @@
+import 'jest-styled-components';
 import { toMatchImageSnapshot } from 'jest-image-snapshot';
 import { configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
