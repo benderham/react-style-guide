@@ -1,22 +1,13 @@
 import React from 'react';
-import { ThemeProvider } from 'styled-components';
 import { shallow } from 'enzyme';
 import { shallowToJson } from 'enzyme-to-json';
 import { Chrome } from 'navalia';
+import { shallowWithTheme } from './../../setupTests';
 import { theme } from './../../utils/theme';
 import Button from './Button';
 
-const shallowWithTheme = (tree, theme) => {
-  const context = shallow(<ThemeProvider theme={theme} />)
-    .instance()
-    .getChildContext();
-  return shallow(tree, { context });
-};
-
 describe('Button', () => {
-  // Common Props
-
-  describe('Props', () => {
+  describe('Tests', () => {
     it('should render children as expected', () => {
       const props = {
         onClick: jest.fn(),
