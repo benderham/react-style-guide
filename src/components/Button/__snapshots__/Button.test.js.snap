@@ -10,9 +10,9 @@ exports[`Button Snapshots Disabled Button should render as expected, without err
   text-transform: lowercase;
   text-decoration: none;
   line-height: 1;
-  color: #B500B5;
+  color: #A10578;
   background-color: transparent;
-  border: solid 2px #B500B5;
+  border: solid 2px #A10578;
   box-shadow: 0 0 1px rgba(0,0,0,0);
   -webkit-transform: perspective(1px) translateZ(0);
   -ms-transform: perspective(1px) translateZ(0);
@@ -28,8 +28,8 @@ exports[`Button Snapshots Disabled Button should render as expected, without err
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: #B500B5;
-  border: solid 2px #B500B5;
+  background-color: #A10578;
+  border: solid 2px #A10578;
   -webkit-transform: scaleX(0);
   -ms-transform: scaleX(0);
   transform: scaleX(0);
@@ -46,7 +46,7 @@ exports[`Button Snapshots Disabled Button should render as expected, without err
 .c0:hover,
 .c0:focus,
 .c0:active {
-  color: #ffffff;
+  color: #F7F7F7;
 }
 
 .c0:hover::before,
@@ -65,7 +65,7 @@ exports[`Button Snapshots Disabled Button should render as expected, without err
 .c0:disabled:hover,
 .c0:disabled:focus,
 .c0:disabled:active {
-  color: #B500B5;
+  color: #A10578;
 }
 
 .c0:disabled:hover::before,
@@ -97,9 +97,9 @@ exports[`Button Snapshots Primary Button should render anchor as expected, witho
   text-transform: lowercase;
   text-decoration: none;
   line-height: 1;
-  color: #B500B5;
+  color: #A10578;
   background-color: transparent;
-  border: solid 2px #B500B5;
+  border: solid 2px #A10578;
   box-shadow: 0 0 1px rgba(0,0,0,0);
   -webkit-transform: perspective(1px) translateZ(0);
   -ms-transform: perspective(1px) translateZ(0);
@@ -115,8 +115,8 @@ exports[`Button Snapshots Primary Button should render anchor as expected, witho
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: #B500B5;
-  border: solid 2px #B500B5;
+  background-color: #A10578;
+  border: solid 2px #A10578;
   -webkit-transform: scaleX(0);
   -ms-transform: scaleX(0);
   transform: scaleX(0);
@@ -133,7 +133,7 @@ exports[`Button Snapshots Primary Button should render anchor as expected, witho
 .c0:hover,
 .c0:focus,
 .c0:active {
-  color: #ffffff;
+  color: #F7F7F7;
 }
 
 .c0:hover::before,
@@ -152,7 +152,7 @@ exports[`Button Snapshots Primary Button should render anchor as expected, witho
 .c0:disabled:hover,
 .c0:disabled:focus,
 .c0:disabled:active {
-  color: #B500B5;
+  color: #A10578;
 }
 
 .c0:disabled:hover::before,
@@ -183,9 +183,9 @@ exports[`Button Snapshots Primary Button should render button as expected, witho
   text-transform: lowercase;
   text-decoration: none;
   line-height: 1;
-  color: #B500B5;
+  color: #A10578;
   background-color: transparent;
-  border: solid 2px #B500B5;
+  border: solid 2px #A10578;
   box-shadow: 0 0 1px rgba(0,0,0,0);
   -webkit-transform: perspective(1px) translateZ(0);
   -ms-transform: perspective(1px) translateZ(0);
@@ -201,8 +201,8 @@ exports[`Button Snapshots Primary Button should render button as expected, witho
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: #B500B5;
-  border: solid 2px #B500B5;
+  background-color: #A10578;
+  border: solid 2px #A10578;
   -webkit-transform: scaleX(0);
   -ms-transform: scaleX(0);
   transform: scaleX(0);
@@ -219,7 +219,7 @@ exports[`Button Snapshots Primary Button should render button as expected, witho
 .c0:hover,
 .c0:focus,
 .c0:active {
-  color: #ffffff;
+  color: #F7F7F7;
 }
 
 .c0:hover::before,
@@ -238,7 +238,7 @@ exports[`Button Snapshots Primary Button should render button as expected, witho
 .c0:disabled:hover,
 .c0:disabled:focus,
 .c0:disabled:active {
-  color: #B500B5;
+  color: #A10578;
 }
 
 .c0:disabled:hover::before,
@@ -270,9 +270,9 @@ exports[`Button Snapshots Secondary Button should render as expected, without er
   text-transform: lowercase;
   text-decoration: none;
   line-height: 1;
-  color: #632B63;
+  color: #FA0574;
   background-color: transparent;
-  border: solid 2px #632B63;
+  border: solid 2px #FA0574;
   box-shadow: 0 0 1px rgba(0,0,0,0);
   -webkit-transform: perspective(1px) translateZ(0);
   -ms-transform: perspective(1px) translateZ(0);
@@ -288,8 +288,8 @@ exports[`Button Snapshots Secondary Button should render as expected, without er
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: #632B63;
-  border: solid 2px #632B63;
+  background-color: #FA0574;
+  border: solid 2px #FA0574;
   -webkit-transform: scaleX(0);
   -ms-transform: scaleX(0);
   transform: scaleX(0);
@@ -306,7 +306,7 @@ exports[`Button Snapshots Secondary Button should render as expected, without er
 .c0:hover,
 .c0:focus,
 .c0:active {
-  color: #ffffff;
+  color: #F7F7F7;
 }
 
 .c0:hover::before,
@@ -325,7 +325,7 @@ exports[`Button Snapshots Secondary Button should render as expected, without er
 .c0:disabled:hover,
 .c0:disabled:focus,
 .c0:disabled:active {
-  color: #632B63;
+  color: #FA0574;
 }
 
 .c0:disabled:hover::before,

@@ -120,15 +120,15 @@ describe('Button', () => {
   });
 
   describe('Snapshots', () => {
-    // let chrome = null;
+    let chrome = null;
 
-    // beforeAll(() => {
-    //   chrome = new Chrome();
-    // });
+    beforeAll(() => {
+      chrome = new Chrome();
+    });
 
-    // afterAll(() => {
-    //   chrome.done();
-    // });
+    afterAll(() => {
+      chrome.done();
+    });
 
     describe('Primary Button', () => {
       it('should render button as expected, without error', () => {
@@ -154,14 +154,14 @@ describe('Button', () => {
         expect(shallowToJson(output)).toMatchSnapshot();
       });
 
-      // it('should not have visual regressions', () => {
-      //   return chrome
-      //     .goto(
-      //       'http://localhost:9009/?selectedKind=Button&selectedStory=Primary&full=1&addons=1&stories=1&panelRight=0&addonPanel=storybook%2Factions%2Factions-panel',
-      //     )
-      //     .then(() => chrome.screenshot())
-      //     .then(image => expect(image).toMatchImageSnapshot());
-      // });
+      it('should not have visual regressions', () => {
+        return chrome
+          .goto(
+            'http://localhost:9009/?selectedKind=Buttons&selectedStory=Button%20Primary&full=1&addons=1&stories=1&panelRight=0&addonPanel=%40storybook%2Faddon-a11y%2Fpanel',
+          )
+          .then(() => chrome.screenshot())
+          .then(image => expect(image).toMatchImageSnapshot());
+      });
     });
 
     describe('Secondary Button', () => {
@@ -177,14 +177,14 @@ describe('Button', () => {
         expect(shallowToJson(output)).toMatchSnapshot();
       });
 
-      // it('should not have visual regressions', () => {
-      //   return chrome
-      //     .goto(
-      //       'http://localhost:9009/?selectedKind=Button&selectedStory=Secondary&full=1&addons=1&stories=1&panelRight=0&addonPanel=storybook%2Factions%2Factions-panel',
-      //     )
-      //     .then(() => chrome.screenshot())
-      //     .then(image => expect(image).toMatchImageSnapshot());
-      // });
+      it('should not have visual regressions', () => {
+        return chrome
+          .goto(
+            'http://localhost:9009/?selectedKind=Buttons&selectedStory=Button%20Secondary&full=1&addons=1&stories=1&panelRight=0&addonPanel=%40storybook%2Faddon-a11y%2Fpanel',
+          )
+          .then(() => chrome.screenshot())
+          .then(image => expect(image).toMatchImageSnapshot());
+      });
     });
 
     describe('Disabled Button', () => {
@@ -200,14 +200,14 @@ describe('Button', () => {
         expect(shallowToJson(output)).toMatchSnapshot();
       });
 
-      // it('should not have visual regressions', () => {
-      //   return chrome
-      //     .goto(
-      //       'http://localhost:9009/?selectedKind=Button&selectedStory=Disabled&full=1&addons=1&stories=1&panelRight=0&addonPanel=storybook%2Factions%2Factions-panel',
-      //     )
-      //     .then(() => chrome.screenshot())
-      //     .then(image => expect(image).toMatchImageSnapshot());
-      // });
+      it('should not have visual regressions', () => {
+        return chrome
+          .goto(
+            'http://localhost:9009/?selectedKind=Buttons&selectedStory=Button%20Disabled&full=1&addons=1&stories=1&panelRight=0&addonPanel=%40storybook%2Faddon-a11y%2Fpanel',
+          )
+          .then(() => chrome.screenshot())
+          .then(image => expect(image).toMatchImageSnapshot());
+      });
     });
   });
 });

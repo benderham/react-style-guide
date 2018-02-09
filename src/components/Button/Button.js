@@ -13,14 +13,14 @@ const styles = css`
   line-height: 1;
   color: ${props =>
     props.kind === 'secondary'
-      ? props.theme.colors.medium
-      : props.theme.colors.bright};
+      ? props.theme.colors.accent
+      : props.theme.colors.primary};
   background-color: transparent;
   /* prettier-ignore */
   border: solid 2px ${props =>
     props.kind === 'secondary'
-      ? props.theme.colors.medium
-      : props.theme.colors.bright};
+      ? props.theme.colors.accent
+      : props.theme.colors.primary};
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   transform: perspective(1px) translateZ(0);
   transition: color 0.3s ease-out;
@@ -34,12 +34,12 @@ const styles = css`
     left: 0;
     background-color: ${props =>
       props.kind === 'secondary'
-        ? props.theme.colors.medium
-        : props.theme.colors.bright};
+        ? props.theme.colors.accent
+        : props.theme.colors.primary};
     border: solid 2px ${props =>
       props.kind === 'secondary'
-        ? props.theme.colors.medium
-        : props.theme.colors.bright};
+        ? props.theme.colors.accent
+        : props.theme.colors.primary};
     transform: scaleX(0);
     transform-origin: 0 50%;
     transition: transform 0.3s ease-out;
@@ -66,8 +66,8 @@ const styles = css`
     &:active {
       color: ${props =>
         props.kind === 'secondary'
-          ? props.theme.colors.medium
-          : props.theme.colors.bright};
+          ? props.theme.colors.accent
+          : props.theme.colors.primary};
 
       &::before {
         transform: scaleX(0);
@@ -103,6 +103,7 @@ const Button = ({ children, disabled, kind, href, onClick, type }) => {
 Button.defaultProps = {
   kind: 'primary',
   disabled: false,
+  href: null,
   type: 'button',
 };
 
