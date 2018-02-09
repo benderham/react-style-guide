@@ -10,7 +10,13 @@ storiesOf('Buttons', module)
     withInfo(`
       Primary button style with text label.
     `)(() => (
-      <div>
+      <div
+        style={{
+          display: 'grid',
+          gridTemplateColumns: '1fr 1fr',
+          gridGap: 20,
+        }}
+      >
         <Button onClick={action('button-click')}>Button</Button>
         <Button href="https://google.com.au">Button</Button>
       </div>
@@ -21,7 +27,13 @@ storiesOf('Buttons', module)
     withInfo(`
       Secondary button style with text label.
     `)(() => (
-      <div>
+      <div
+        style={{
+          display: 'grid',
+          gridTemplateColumns: '1fr 1fr',
+          gridGap: 20,
+        }}
+      >
         <Button onClick={action('button-click')} kind="secondary">
           Button
         </Button>
